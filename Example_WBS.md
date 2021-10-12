@@ -1,29 +1,40 @@
-# FILE MANAGER APPLICATION	_(est. 60 hours)_
+# Project 1. Development plan.
+**Project. Client/Server application to check system (disk) space on remote host.**
 
-1.	**Planning** 				 _(18 hours)_
-    1. Requirements analysis/elaboration 	_(2 hours)_
-    2. Research (APIs, libraries, etc.)     _(6 hours)_
-        1.  UI - Qt learning                        _(3 hours)_
-        2.  Threading - platform dependent APIs     _(3 hours)_
-    3. Documentation prep	                _(10 hours)_
-        1.  WBS                                     _(2 hours)_
-        2.  Use-case diagram                        _(2 hours)_
-        3.  Sequence diagram                        _(2 hours)_
-        4.  Class diagram                           _(4 hours)_
-2.	**Developing**				 _(34 hours)_
-    1. Base functionality			        _(18 hours)_
-        1. Displaying catalogs and files            _(6 hours)_ 
-        2. Displaynig icons and attributes          _(4 hours)_
-        3. Showing/hiding attributes                _(2 hours)_
-        4. Sorting by attributes                    _(6 hours)_
-    2. Multithreading functionality         _(14 hours)_
-        1. Copy, move, rename, delete               _(8 hours)_
-        2. Progress bar & dialog windows            _(6 hours)_      
-    3. Make file                            _(2 hours)_
-3.	**Testing**					 _(6 hours)_
-    1.	Windows testing, bug fixing				_(3 hours)_
-    2.	Linux testing, bug fixing				_(3 hours)_
-4.  **Deployment**              _(2 hours)_
-    1.  Readme file                             
-    2.  Commit and merge                       
-    
+The project is given 10 working days of 4 hours. Consequently, the entire project is given 40 hours.
+
+**Division of the project into tasks and subtasks.**
+ 1. Familiarization with the technical task - _(completed)_
+ 2. Cloning the original project to the GitHab working repository - _(done)_
+ 3. Familiarization with the subject area, algorithm's modeling, _(16 hours)_
+   3.1. Soccets, _(4 hours)_
+      3.1.1. WinAPI sockets, _(2 hours)_
+	  3.1.2. POSIX sockets, _(2 hours)_
+   3.2. Definition of communication options equipment <-> client <-> server? _(8 hours)_
+      3.2.1. Interaction Client - WinAPI Server (theory), _(2 hours)_
+	  3.2.2. Interaction Client - Server POSIX (theory), _(2 hours)_
+	  3.2.3. Interaction Equipment - WinAPI Client (Theory), _(2 hours)_
+	  3.2.4. Interaction Equipment - Client POSIX (theory), _(2 hours)_
+   3.3. Determination of opportunities for organizing cross-platform assembly, _(4 hours)_
+      3.3.1. Development of a test prototype of the WinAPI application, _(2 hours)_
+	  3.3.2. Development of a test prototype of the POSIX application, _(2 hours)_
+   3.4. Learn About MakeCMake technology. _()_
+ 4. Development of client-server communication module, _(8 hours)_
+   4.1. Network hostname detection function, _(1 hour)_
+   4.2. Port detection function, _(2 hours)_
+   4.3. Port change function, (2 hours)_
+   4.4. Connection function, _(2 hours)_
+   4.5. Disconnect function, _(1 hour)_
+ 5. Development of the prototype "Client", _(4 hours)_
+   5.1. Development of the interface of connection to the network, _(2 hours)_
+   5.2. Development of the interface of interaction with the client, _(2 hours)_
+   5.3. Development of the interface of interaction with several clients, _(2 hours)_
+ 6. Development of the prototype "Server", _(6 hours)_
+   6.1. Development of the interface of connection to the network, _(2 hours)_
+   6.2. Development of the interface of interaction with the client, _(2 hours)_
+   6.3. Development of the interface of interaction with several clients, _(2 hours)_
+   6.4. Development of the interface of interaction with several clients (multithreading), _(2 hours)_
+ 7. Black box testing (POSIXWinAPI) _(4 hours)_
+   7.1. Testing _(2 hours)_
+   7.2. Debugging, bug fixing, _(2 hours)_
+ 8. Paperwork, _(2 hours)_
